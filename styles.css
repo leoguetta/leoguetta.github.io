@@ -286,3 +286,19 @@ header {
     flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
 }
 }
+
+ /* Adjustments for profile-container on smaller screens */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 0 15px; /* Add space on the left and right */
+        align-items: center; /* Ensure the content is centered */
+    }
+
+    .profile-text {
+        text-align: center; /* Center text content if needed */
+    }
+
+    .profile-image {
+        margin: 20px auto; /* Center the image with spacing */
+    }
+}
