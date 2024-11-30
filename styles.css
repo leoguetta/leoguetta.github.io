@@ -167,20 +167,20 @@ nav {
     }
 }
 
-/* Download Link Styles */
-.download-link {
-    display: inline-block; /* Allows padding and hover effects */
-    padding: 10px 20px; /* Space inside the button */
-    margin-top: 10px; /* Add some space above the link */
-    font-size: 1rem; /* Adjust text size */
-    font-weight: 600; /* Make it slightly bolder */
-    text-decoration: none; /* Remove underline */
-    color: white; /* Text color */
-    background-color: #6dbf73; /* Green background */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-}
+/* /\* Download Link Styles *\/ */
+/* .download-link { */
+/*     display: inline-block; /\* Allows padding and hover effects *\/ */
+/*     padding: 10px 20px; /\* Space inside the button *\/ */
+/*     margin-top: 10px; /\* Add some space above the link *\/ */
+/*     font-size: 1rem; /\* Adjust text size *\/ */
+/*     font-weight: 600; /\* Make it slightly bolder *\/ */
+/*     text-decoration: none; /\* Remove underline *\/ */
+/*     color: white; /\* Text color *\/ */
+/*     background-color: #6dbf73; /\* Green background *\/ */
+/*     border-radius: 5px; /\* Rounded corners *\/ */
+/*     transition: background-color 0.3s ease; /\* Smooth hover effect *\/ */
+/* } */
 
-.download-link:hover {
-    background-color: #4caf50; /* Lighter green on hover */
-}
+/* .download-link:hover { */
+/*     background-color: #4caf50; /\* Lighter green on hover *\/ */
+/* } */
