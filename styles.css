@@ -53,7 +53,7 @@ header .container {
 
 nav {
     display: flex;
-      gap: 2rem; /* Spacing between links */
+    gap: 2rem; /* Spacing between links */
   align-items: center; /* Align links with the logo */
 }
 
@@ -206,21 +206,23 @@ tr:hover {
 }
 
 /* Seminar Details Styling */
-.seminar-details {
+.seminar-details, .syllabus, .references {
   margin-top: 30px;
   padding: 20px;
-}
-
-.details-card {
   background-color: white;
-  border-left: 5px solid #6dbf73; /* Green accent border */
-  padding: 15px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  border-radius: 8px; /* Rounded corners */
-  max-width: 500px; /* Keeps it compact */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow like other sections */
+  border-radius: 8px; /* Consistent rounded corners */
 }
 
-.details-card p {
+/* .details-card, .reference-category { */
+/*   padding: 15px; */
+/*   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /\* Subtle shadow *\/ */
+/*   border-radius: 8px; /\* Rounded corners *\/ */
+/*   max-width: 500px; /\* Keeps it compact *\/ */
+/*   margin-bottom: 20px; /\* Space between items *\/ */
+/* } */
+
+.details-card p, .reference-category p {
   margin: 10px 0;
   font-size: 1rem;
   color: #4b5563; /* Dark gray */
@@ -230,37 +232,10 @@ tr:hover {
   color: #2c6b95; /* Blue shade for emphasis */
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .details-card {
-    max-width: 100%;
-  }
-}
-
-/* Condensed References Section */
-.references {
-  margin-top: 30px;
-}
-
-.reference-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive 2-column layout */
-  gap: 10px; /* Less spacing between sections */
-}
-
-.reference-category {
-  background-color: white;
-  border-left: 4px solid #6dbf73;
-  padding: 10px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Smaller shadow */
-  border-radius: 5px;
-  font-size: 0.95rem; /* Slightly smaller text */
-}
-
 .reference-category h3 {
   color: #2c6b95;
   font-size: 1rem; /* Smaller heading */
-    margin-bottom: 8px;
+  margin-bottom: 8px;
   border-bottom: 2px solid #e0e0e0; /* Subtle underline for separation */
   padding-bottom: 3px;
 }
@@ -277,33 +252,18 @@ tr:hover {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 600px) {
-  .reference-grid {
-    grid-template-columns: 1fr; /* Single-column on small screens */
-  }
-
-  .reference-category {
-    padding: 8px;
+@media (max-width: 768px) {
+  .details-card, .reference-category {
+    max-width: 100%;
   }
 }
 
 /* Syllabus Section Styling */
-.syllabus {
-  margin-top: 30px;
-  padding: 20px;
-  background-color: white; /* Keeps it clean and readable */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow like other sections */
-}
-
 .syllabus h2 {
   font-size: 2rem; /* Large, readable title */
   color: #2c6b95; /* Blue color like other section titles */
   margin-bottom: 20px; /* Add space between title and first section */
   font-weight: 700; /* Bold to make the title stand out */
-}
-
-.syllabus-section {
-  margin-bottom: 30px; /* Adds space between sections */
 }
 
 .syllabus-section h3 {
@@ -313,12 +273,6 @@ tr:hover {
   font-weight: 600; /* Semi-bold for the section headers */
   border-bottom: 2px solid #e0e0e0; /* Underline for separation */
   padding-bottom: 3px; /* Small padding below */
-}
-
-.syllabus-section ul {
-  list-style-type: none; /* No bullet points */
-  padding: 0;
-  margin: 0;
 }
 
 .syllabus-section li {
@@ -347,21 +301,40 @@ tr:hover {
   }
 }
 
+/* Uniform Section Padding & Margins */
+section {
+  margin-top: 30px; /* Standard top margin for all sections */
+  padding: 20px;    /* Uniform padding */
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for all sections */
+  border-radius: 8px; /* Consistent rounded corners for all sections */
+}
 
-/* /\* Download Link Styles *\/ */
-/* .download-link { */
-/*     display: inline-block; /\* Allows padding and hover effects *\/ */
-/*     padding: 10px 20px; /\* Space inside the button *\/ */
-/*     margin-top: 10px; /\* Add some space above the link *\/ */
-/*     font-size: 1rem; /\* Adjust text size *\/ */
-/*     font-weight: 600; /\* Make it slightly bolder *\/ */
-/*     text-decoration: none; /\* Remove underline *\/ */
-/*     color: white; /\* Text color *\/ */
-/*     background-color: #6dbf73; /\* Green background *\/ */
-/*     border-radius: 5px; /\* Rounded corners *\/ */
-/*     transition: background-color 0.3s ease; /\* Smooth hover effect *\/ */
-/* } */
+section h2 {
+  font-size: 2rem;
+  color: #2c6b95; /* Consistent color for all section titles */
+  margin-bottom: 20px;
+  font-weight: 700; /* Ensure boldness for all h2 titles */
+}
 
-/* .download-link:hover { */
-/*     background-color: #4caf50; /\* Lighter green on hover *\/ */
-/* } */
+section h3 {
+  font-size: 1.25rem;
+  color: #2c6b95;
+  margin-bottom: 10px;
+  font-weight: 600; /* Semi-bold for all subheadings */
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 3px;
+}
+
+/* Uniform List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 8px; /* Add spacing between list items */
+}
