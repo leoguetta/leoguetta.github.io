@@ -206,7 +206,7 @@ tr:hover {
 }
 
 /* Seminar Details Styling */
-.seminar-details, .syllabus, .references {
+.seminar-details, .syllabus, .references, .schedule {
   margin-top: 30px;
   padding: 20px;
   background-color: white;
